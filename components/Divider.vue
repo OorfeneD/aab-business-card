@@ -1,5 +1,5 @@
 <template>
-  <span class="h-1 w-full bg-pink-400 " />
+  <span class="h-0.5 w-full bg-pink-300 " />
 </template>
 
 <script>
