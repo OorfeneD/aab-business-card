@@ -1,12 +1,8 @@
 <template>
-  <div class="container flex flex-col">
-    <div class="pt-10 mb-5">
-      <Header />
-    </div>
+  <div class="container flex flex-col justify-between">
+    <Header />
     <contact-list />
-    <div class="pb-10 mt-10">
-      <Footer />
-    </div>
+    <Footer />
   </div>
 </template>
 
