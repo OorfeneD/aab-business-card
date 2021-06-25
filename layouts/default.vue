@@ -1,10 +1,56 @@
 <template>
   <div>
+    <div class="sq-bg-f" />
+    <div class="sq-bg-s" />
     <Nuxt />
   </div>
 </template>
 
 <style>
+.sq-bg-f {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('~assets/icons/mobile/background-atop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  font-size: 0;
+}
+.sq-bg-s {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('~assets/icons/mobile/background-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  font-size: 0;
+}
+@media screen and (min-width: 768px) {
+  .sq-bg-f {
+    background-image: url('~assets/icons/tablet/background-atop.svg');
+  }
+  .sq-bg-s {
+    background-image: url('~assets/icons/tablet/background-down.svg');
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sq-bg-f {
+    background-image: url('~assets/icons/desktop/background-right.svg');
+    background-position: right;
+  }
+  .sq-bg-s {
+    background-position: left;
+    background-image: url('~assets/icons/desktop/background-left.svg');
+  }
+}
 html {
   font-family:
     'Source Sans Pro',
