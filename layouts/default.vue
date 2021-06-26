@@ -51,6 +51,13 @@
     background-image: url('~assets/icons/desktop/background-left.svg');
   }
 }
+.sq-bg-1 {
+  background-color: #5BA8A6;
+  opacity: 0.95;
+}
+.sq-bg-2 {
+  background-color: #5BA8A6;
+}
 html {
   font-family:
     'Source Sans Pro',
