@@ -1,10 +1,11 @@
 <template>
   <div>
     <div class="sq-bg-f" />
-    <div class="sq-bg-s" />
+    <div class="sq-bg-s">
+      <credentials class="absolute bottom-2 sq-credentials" />
+    </div>
     <floating-socials absolute class="hidden md:flex lg:hidden" />
     <Nuxt />
-    <credentials class="absolute bottom-2 sq-credentials" />
     <notifications-provider />
     <share-button />
   </div>
@@ -16,8 +17,8 @@
   z-index: -1;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   background-image: url('~assets/icons/mobile/background-atop.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,8 +30,9 @@
   z-index: -1;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  min-height: 600px;
+  height: 100vh;
   background-image: url('~assets/icons/mobile/background-down.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -90,10 +92,5 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 </style>

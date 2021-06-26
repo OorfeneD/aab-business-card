@@ -28,7 +28,8 @@ export default {
 */
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 600px;
+  height: 100vh;
   max-height: 100vh;
   text-align: center;
 }
