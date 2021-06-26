@@ -3,7 +3,7 @@
     <div class="w-40 h-40 rounded-full border-8 border-white shadow-lg overflow-hidden">
       <img src="~assets/images/logo.jpg" alt="Logo image" class="">
     </div>
-    <p class="font-bold text-xl text-green-700 mt-1 sq-name">
+    <p class="font-bold text-xl text-green-700 mt-3 sq-name">
       Аскерова Амина Джамаловна
     </p>
     <p class="">
