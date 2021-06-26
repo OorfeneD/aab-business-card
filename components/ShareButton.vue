@@ -8,9 +8,10 @@ export default {
   methods: {
     ...mapActions(['addNotification']),
     clicked () {
-      if (navigator && navigator.canShare()) {
+      if (navigator.share && window.matchMedia('only screen and (max-width: 760px)').matches) {
         navigator.share({
-          url: window ? window.location.href : ''
+          url: window ? window.location.href : '',
+          title: 'Dr. Askerova Amina'
         })
       } else {
         navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {

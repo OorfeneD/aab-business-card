@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'aab-business-card',
+    title: 'Dr. Askerova Amina',
     htmlAttrs: {
       lang: 'en'
     },

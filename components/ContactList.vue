@@ -36,7 +36,7 @@ export default {
     ...mapActions(['addNotification']),
     phoneClick (event) {
       if (window) {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1023) {
           navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
             if (result.state === 'granted' || result.state === 'prompt') {
               navigator.clipboard.writeText(event.target.innerText).then(function () {
@@ -52,7 +52,7 @@ export default {
     },
     mailClick (event) {
       if (window) {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1023) {
           navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
             if (result.state === 'granted' || result.state === 'prompt') {
               navigator.clipboard.writeText(event.target.innerText).then(function () {
