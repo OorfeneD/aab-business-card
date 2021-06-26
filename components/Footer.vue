@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col bg-bottom w-full mt-10 items-center pb-1 mb-10">
+  <div class="flex flex-col bg-bottom w-full mt-10 items-center pb-1 mb-8">
     <div class="flex justify-between w-64 items-center">
       <a href="tel:+7 (926) 216-05-58">
         <img src="~assets/icons/icon-mobile-sm.svg" alt="" class="w-12 h-12 rounded-xl sq-shadow sq-bg-2">

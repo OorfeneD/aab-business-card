@@ -62,4 +62,11 @@ export default {
 .links {
   padding-top: 15px;
 }
+@font-face {
+  font-family: 'Kontora';
+  src: url('~assets/fonts/Kontora SemiBold.otf');
+}
+p {
+  font-family: 'Kontora', sans-serif;
+}
 </style>
