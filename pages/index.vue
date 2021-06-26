@@ -1,8 +1,8 @@
 <template>
-  <div class="container flex flex-col justify-between">
+  <div class="container flex flex-col md:flex-row lg:flex-col justify-between md:justify-center items-center md:pb-20">
     <Header />
     <contact-list />
-    <Footer />
+    <Footer class="md:hidden" />
   </div>
 </template>
 
@@ -30,7 +30,6 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   max-height: 100vh;
-  align-items: center;
   text-align: center;
 }
 

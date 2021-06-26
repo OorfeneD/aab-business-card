@@ -1,32 +1,42 @@
 <template>
-  <div class="flex flex-col w-72 items-center">
-    <Divider />
-    <p class="mt-2 mb-3">
+  <div class="flex flex-col w-72 items-center sq-w-120">
+    <Divider class="md:hidden" />
+    <p class="mt-2 mb-3 md:hidden">
       Контактная информация:
     </p>
-    <contact-row href="tel:+79262160558" w-full :src="require('@/assets/icons/icon-mobile-sm.svg')" text="+7 (926) 216-05-58" />
-    <contact-row href="mailto:dr.amina.ask@gmail.com" w-full :src="require('@/assets/icons/icon-email-sm.svg')" text="dr.amina.ask@gmail.com" />
-    <contact-row
-      href="https://yandex.ru/maps/213/moscow/search/ГБУЗ%20«Госпиталь%20Ветеранов%20Войн%202»%20ДЗМ%20Волгоградский%20проспект%2C%20168%2C%20строение%201%2C%20Москва/"
-      w-full
-      big
-      text-small
-      :src="require('@/assets/icons/icon-map.svg')"
-      text="Москва, Волгоградский проспект, дом 168, строение 1"
-    />
-    <div class="w-full my-1 h-1" />
-    <Divider />
+    <logo-name class="hidden md:flex" />
+    <floating-socials class="hidden lg:flex" />
+    <div class="flex flex-col justify-center w-full items-center md:flex-row md:flex-wrap">
+      <contact-row href="tel:+79262160558" :src="require('@/assets/icons/icon-mobile-sm.svg')" text="+7 (926) 216-05-58" />
+      <contact-row href="mailto:dr.amina.ask@gmail.com" :src="require('@/assets/icons/icon-email-sm.svg')" text="dr.amina.ask@gmail.com" />
+      <contact-row
+        href="https://yandex.ru/maps/213/moscow/search/ГБУЗ%20«Госпиталь%20Ветеранов%20Войн%202»%20ДЗМ%20Волгоградский%20проспект%2C%20168%2C%20строение%201%2C%20Москва/"
+        big
+        text-small
+        :src="require('@/assets/icons/icon-map.svg')"
+        :text="`Москва, Волгоградский проспект, дом 168, строение 1`"
+        class="lg:mt-5"
+      />
+    </div>
+    <div class="w-full my-1 h-1 md:hidden" />
+    <Divider class="md:hidden" />
   </div>
 </template>
 
 <script>
 import ContactRow from './ContactRow.vue'
 import Divider from './Divider.vue'
+import FloatingSocials from './FloatingSocials.vue'
+import LogoName from './LogoName.vue'
 export default {
-  components: { Divider, ContactRow }
+  components: { Divider, ContactRow, LogoName, FloatingSocials }
 }
 </script>
 
 <style>
-
+@media screen and (min-width: 768px) {
+  .sq-w-120 {
+    width: 42rem;
+  }
+}
 </style>
