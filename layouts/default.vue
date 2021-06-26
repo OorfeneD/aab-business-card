@@ -6,6 +6,7 @@
     <Nuxt />
     <credentials class="absolute bottom-2 sq-credentials" />
     <notifications-provider />
+    <share-button />
   </div>
 </template>
 
