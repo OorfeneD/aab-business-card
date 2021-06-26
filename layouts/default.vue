@@ -2,7 +2,9 @@
   <div>
     <div class="sq-bg-f" />
     <div class="sq-bg-s" />
+    <floating-socials absolute class="hidden md:flex lg:hidden" />
     <Nuxt />
+    <credentials class="absolute bottom-2 sq-credentials" />
   </div>
 </template>
 
@@ -32,6 +34,10 @@
   background-size: contain;
   background-position-y: bottom;
   font-size: 0;
+}
+.sq-credentials {
+  transform: translateX(-50%);
+  left: 50%;
 }
 @media screen and (min-width: 768px) {
   .sq-bg-f {
