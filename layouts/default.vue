@@ -33,6 +33,7 @@
   right: 0;
   min-height: 600px;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-image: url('~assets/icons/mobile/background-down.svg');
   background-repeat: no-repeat;
   background-size: contain;

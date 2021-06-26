@@ -11,7 +11,19 @@ import ContactList from '~/components/ContactList.vue'
 import Header from '~/components/Header.vue'
 
 export default {
-  components: { Header, ContactList }
+  components: { Header, ContactList },
+  mounted () {
+    if (window) {
+      this.resizedWindow()
+      window.addEventListener('resize', this.resizedWindow)
+    }
+  },
+  methods: {
+    resizedWindow () {
+      const vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    }
+  }
 }
 </script>
 
@@ -30,6 +42,7 @@ export default {
   margin: 0 auto;
   min-height: 600px;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   max-height: 100vh;
   text-align: center;
 }
